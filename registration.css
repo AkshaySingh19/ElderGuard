@@ -1,4 +1,103 @@
 
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+   
+
+/* From https://css.glass */
+/* From https://css.glass */
+background: rgba(27, 22, 22, 0.19);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(27, 22, 22, 0.27);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+
+input {
+    display: block;  /* Make sure inputs take full width */
+     width: calc(100% - 20px);  /*Adjust width for padding */
+    
+    padding: 10px;
+    margin: 10px auto;  /*Auto margin for alignment*/
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;  /* Prevent width issues */
+}
+
+/* Ensure the form is centered */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Signup Link */
+p {
+    margin-top: 15px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+ */
+
+ 
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +118,8 @@ body {
 }
 
 .container {
-    width: 350px;
+    width: 35rem;
+    height:25rem;
     padding: 30px;
     background: rgba(15, 76, 230, 0.1);
     border-radius: 15px;
@@ -46,7 +146,7 @@ body {
 
 
 .button button {
-    width: 30%;
+    width: 100%;
     padding: 12px;
     background: linear-gradient(45deg, #007BFF, #08396e);
     border: none;
@@ -63,8 +163,21 @@ body {
     transform: scale(1.05);
 }
 input::placeholder{
-    font-size:0.9rem ;
+    font-size:1.2rem ;
     color: black;
+    font-weight: 600;
+
+}
+.login{
+    margin-top: 0.65rem;
+    display: flex;
+    gap: 0.5rem;
+}
+.login span{
+    font-size: 1.3rem;
+}
+ a{
+    font-size: 1.3rem;
 }
 
 /* Smooth fade-in animation */
